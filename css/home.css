@@ -4,6 +4,7 @@
 
 body {
   font-family: helvetica, Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(235, 233, 233);
 }
 
 header {
@@ -32,6 +33,7 @@ header {
  height: 80px;
 }
 
+@media (max-width: 480px) {
   .logo-image {
     width:120px;
   }
@@ -41,6 +43,7 @@ header {
   border: 1px solid blue;
   font-kerning: 18px;
   display: flex;
+  flex-direction: row wrap; 
  /* text-transform: uppercase;*/
 }
 
@@ -51,12 +54,13 @@ header {
   color: black;
 }
 
+@media (max-width: 480px) {
   .navbar-link {
     width:100%;
     margin-left:50px;
     padding-right: 100px;
     display: flex;
-    flex-direction: row wrap; 
+    flex-direction: row; 
     font-size:22px;
   }
 }
@@ -94,8 +98,8 @@ h3  {
 
 @media (max-width: 480px) {
   .hero-text {
-    width:100%;
-    margin-left: -160px;
+   width:100%;
+   margin-left: -160px;
   }
   .hero-text h2 {
     width:400px;
@@ -113,6 +117,7 @@ h3  {
 }
 
 
+@media (max-width: 480px) {
   .chi-sono {
     width:350px;
     min-height: 50vh;
@@ -132,6 +137,7 @@ h3  {
   margin-right: 150px;
  }
 
+ @media (max-width: 480px) {
   .chi-sono-description {
     width:350px;
     height:600px;
@@ -206,6 +212,8 @@ h3  {
   top: 0;
   right: 0;
 }
+
+@media (max-width: 480px) {
   .inlove-list-item-image {
     height:60%;
     top: 350px;
@@ -253,6 +261,7 @@ my journey container
   margin-right: 150px;
  }
 
+ @media (max-width: 480px) {
   .myjournay-description {
     width:450px;
     height:750px;
@@ -273,6 +282,7 @@ my journey container
   width: 100%;
 }
 
+@media (max-width: 480px) {
   .myjournay img {
     width:450px;
     margin: 0px;
@@ -304,6 +314,7 @@ my journey container
   color: black,
 }
 
+@media (max-width: 480px) {
   .project {
     width:450px;
     height:750px;
@@ -344,6 +355,7 @@ my journey container
   margin-right: 150px;
  }
 
+ @media (max-width: 480px) {
   .contact-description {
     width:450px;
     height:750px;

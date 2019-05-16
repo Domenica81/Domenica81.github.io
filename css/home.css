@@ -1,0 +1,405 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(189, 189, 189);
+}
+
+header {
+  width: 100%;
+  padding: 30px;
+
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.logo-link {
+  height: 50px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .logo-link  {
+    width: 5px;
+  }
+}
+
+.logo-image {
+ width:150px; 
+ height: 80px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .logo-image {
+    width:120px;
+  }
+}
+
+.navbar {
+  border: 1px solid blue;
+  font-kerning: 18px;
+  display: flex;
+  flex-direction: row; 
+ /* text-transform: uppercase;*/
+}
+
+.navbar-link {
+  margin-left: 100px;
+  /* border: 2px solid grey; */
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .navbar-link {
+    width:100%;
+    margin-left:50px;
+    padding-right: 100px;
+    font-size:22px;
+  }
+}
+
+.margin-section {
+  margin: 0 150px;
+   /* border: 1px solid black;*/
+ }
+
+ @media (min-width: 320px) and (max-width: 480px) {
+  .margin-section {
+    border: solid 2px red;
+    margin-left: 5px; 
+  }
+}    
+
+h1  {
+  font-size: 150px;
+  color: #D5D9D5;
+}
+
+h2  {
+  font-size: 60px;
+}
+
+h3  {
+  font-size: 40px;
+}
+
+.hero-text {
+ min-height: 100vh;
+ padding-top: 200px;
+ padding-left: 150px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .hero-text {
+    width:100%;
+    margin-left: -160px;
+  }
+  .hero-text h2 {
+    width:400px;
+    height:100vh;
+    font-size:80px;
+  }
+}   
+/*
+  chi sono Container
+*/
+
+.chi-sono {
+  min-height: 50vh;
+  position: relative; 
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .chi-sono {
+    width:350px;
+    min-height: 50vh;
+    margin: 25px;
+  } 
+  .chi-sono h3{
+  font-size:22px;
+  } 
+}
+
+.chi-sono-description {
+ /*t border: 1px solid red;*/
+  position: absolute;
+  /*text-align: center;*/
+  margin-top: 2em;
+  margin-left: 150px;
+  margin-right: 150px;
+ }
+
+ @media (min-width: 320px) and (max-width: 480px) {
+  .chi-sono-description {
+    width:350px;
+    height:600px;
+    margin: 0px;
+    top:20%;
+  } 
+}
+.chi-sono-background {
+  position: relative;
+  z-index: -1;
+}
+/*
+  Inlove Container
+*/
+
+/* container */
+.inlove-container {
+ /* border: 5px solid pink;*/ 
+  min-height: 50vh;
+  margin-top: 100px;
+  margin-left: 150px;
+  position: relative;
+
+  font-size: 40px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .inlove-container {
+  width: 80%;
+  min-height: 100vh;
+  margin-left:0px;
+  width: 450px;
+  } 
+  .inlove-container h3 {
+    font-style: italic;
+    font-weight: normal; 
+    color: black;
+  }
+}
+
+.inlove-container h3 {
+  /*font-variant: small-caps;*/
+  font-style: italic;
+  font-weight: normal; 
+  color: black,
+}
+
+/* list */
+.inlove-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* list items  */
+.inlove-list-item {
+  /* border: 5px solid blue; */
+  font-size: 40px;
+  color: #D5D9D5;
+}
+
+/* images inside list items */
+.inlove-list-item-image {
+  /* border: 5px solid red; */
+  height: 100%;
+  /* hide them */
+  display: none;
+
+  /* position image absolutely one over the other
+  relative to the inlove-container */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .inlove-list-item-image {
+    height:60%;
+    top: 350px;
+  } 
+}
+
+/* list item hover -> show the image  */
+.inlove-list-item:hover .inlove-list-item-image {
+  /* show them */
+  display: inline;
+}
+
+.inlove-list-item h1 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.inlove-list-item:hover h1 {
+  display: block;
+}
+
+.inlove-list-item:hover {
+  color: red;
+}
+
+/*
+
+my journey container 
+
+*/
+
+.myjournay {
+    min-height: 50vh;
+    position: relative; 
+     /* border: 3px solid yellow;*/
+  }
+
+  .myjournay-description {
+  position: absolute;
+  /*text-align: center;*/
+  margin-top: 2em;
+  margin-left: 150px;
+  margin-right: 150px;
+ }
+
+ @media (min-width: 320px) and (max-width: 480px) {
+  .myjournay-description {
+    width:450px;
+    height:750px;
+    top:-80px;
+    margin: 0px;
+  } 
+}
+ 
+ .myjournay-background {
+  position: relative;
+  top: -3px;
+  z-index: -1;
+}
+
+.myjournay img {
+  position:relative; 
+  margin-top: 250px;
+  width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .myjournay img {
+    width:450px;
+    margin: 0px;
+    top: 220px;
+  } 
+}
+
+/*
+  project list
+*/
+
+.project {
+  /*border: 5px solid pink;*/
+  min-height: 50vh;
+  margin-top: 100px;
+  margin-left: 150px;
+  position: relative;
+  font-size: 60px;
+  }
+.project li{
+  margin-top:25px;
+  margin-left: 0px;
+  list-style: none;
+}
+
+.project h3 {
+  font-style: italic;
+  font-weight: normal; 
+  color: black,
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .project {
+    width:450px;
+    height:750px;
+    margin: 0px;
+  } 
+  .project h3 {
+     font-size:60px;
+  }
+   .project li {
+    font-size:70px;
+ }
+}
+  .project-list {
+   padding: 0;
+   margin: 0;
+   font-style: normal;
+   list-style: none;
+  }
+
+   .project-list:hover {
+    color: red;
+  }
+
+  /*
+  contact
+*/
+
+.contact {
+  min-height: 50vh;
+  position: relative; 
+}
+
+.contact-description {
+  position: absolute;
+
+  margin-top: 2em;
+  margin-left: 150px;
+  margin-right: 150px;
+ }
+
+ @media (min-width: 320px) and (max-width: 480px) {
+  .contact-description {
+    width:450px;
+    height:750px;
+    margin: 0px;
+    top:80px;
+  } 
+}
+ 
+ .contact-background {
+  position: relative;
+  top: 60px;
+  z-index: -1;
+}
+
+footer {
+ color: grey;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .copyrights {
+    position: absolute;
+    width:450px;
+    margin: 0px;
+  } 
+}
+
+ 
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

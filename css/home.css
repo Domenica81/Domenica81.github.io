@@ -4,7 +4,6 @@
 
 body {
   font-family: helvetica, Georgia, 'Times New Roman', Times, serif;
-  background-color: rgb(189, 189, 189);
 }
 
 header {
@@ -33,7 +32,6 @@ header {
  height: 80px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
   .logo-image {
     width:120px;
   }
@@ -43,7 +41,6 @@ header {
   border: 1px solid blue;
   font-kerning: 18px;
   display: flex;
-  flex-direction: row; 
  /* text-transform: uppercase;*/
 }
 
@@ -54,11 +51,12 @@ header {
   color: black;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
   .navbar-link {
     width:100%;
     margin-left:50px;
     padding-right: 100px;
+    display: flex;
+    flex-direction: row wrap; 
     font-size:22px;
   }
 }
@@ -68,7 +66,7 @@ header {
    /* border: 1px solid black;*/
  }
 
- @media (min-width: 320px) and (max-width: 480px) {
+ @media (max-width: 480px) {
   .margin-section {
     border: solid 2px red;
     margin-left: 5px; 
@@ -94,7 +92,7 @@ h3  {
  padding-left: 150px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .hero-text {
     width:100%;
     margin-left: -160px;
@@ -115,7 +113,6 @@ h3  {
 }
 
 
-@media (min-width: 320px) and (max-width: 480px) {
   .chi-sono {
     width:350px;
     min-height: 50vh;
@@ -135,7 +132,6 @@ h3  {
   margin-right: 150px;
  }
 
- @media (min-width: 320px) and (max-width: 480px) {
   .chi-sono-description {
     width:350px;
     height:600px;
@@ -162,7 +158,7 @@ h3  {
   font-size: 40px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .inlove-container {
   width: 80%;
   min-height: 100vh;
@@ -210,7 +206,6 @@ h3  {
   top: 0;
   right: 0;
 }
-@media (min-width: 320px) and (max-width: 480px) {
   .inlove-list-item-image {
     height:60%;
     top: 350px;
@@ -258,7 +253,6 @@ my journey container
   margin-right: 150px;
  }
 
- @media (min-width: 320px) and (max-width: 480px) {
   .myjournay-description {
     width:450px;
     height:750px;
@@ -279,7 +273,6 @@ my journey container
   width: 100%;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
   .myjournay img {
     width:450px;
     margin: 0px;
@@ -311,7 +304,6 @@ my journey container
   color: black,
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
   .project {
     width:450px;
     height:750px;
@@ -352,7 +344,6 @@ my journey container
   margin-right: 150px;
  }
 
- @media (min-width: 320px) and (max-width: 480px) {
   .contact-description {
     width:450px;
     height:750px;
@@ -371,13 +362,6 @@ footer {
  color: grey;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  .copyrights {
-    position: absolute;
-    width:450px;
-    margin: 0px;
-  } 
-}
 
  
   

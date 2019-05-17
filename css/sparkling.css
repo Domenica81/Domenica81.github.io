@@ -40,7 +40,6 @@ header {
 }
 
 .navbar {
-  border: 1px solid blue;
   font-kerning: 18px;
   display: flex;
   flex-direction: row; 

@@ -14,7 +14,6 @@ body {
 
  @media (max-width: 480px) {
   .margin-section {
-    border: solid 2px red;
     margin-left: 5px; 
   }
 }  
@@ -51,7 +50,6 @@ header {
 }
 
 .navbar {
-  border: 1px solid blue;
   font-kerning: 18px;
   display: flex;
   flex-direction: row; 

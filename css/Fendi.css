@@ -4,6 +4,7 @@
 
 body {
   font-family: helvetica, Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(248, 248, 248);
 }
 
 header {
@@ -21,7 +22,7 @@ header {
   height: 50px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .logo-link  {
     width: 5px;
   }
@@ -32,7 +33,7 @@ header {
  height: 80px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .logo-image {
     width:120px;
   }
@@ -43,7 +44,6 @@ header {
   font-kerning: 18px;
   display: flex;
   flex-direction: row; 
- /* text-transform: uppercase;*/
 }
 
 .navbar-link {
@@ -53,7 +53,7 @@ header {
   color: black;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .navbar-link {
     width:100%;
     margin-left:50px;
@@ -71,7 +71,10 @@ h3  {
 }
 
 h4  {
-  font-size: 25px;
+  font-size: 22px;
+  color: grey;
+  font-style: normal;
+  font-weight: 100;
 }
 
 h5  {
@@ -84,12 +87,12 @@ h5  {
 }
 
 .hero h3 {
-   margin-left: 450px;
-   margin-right: 300px;
-   font-weight: 100;
+   margin-left:350px;
+   margin-right: 400px;
+   font-weight: 600px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .hero h3 {
   margin: 50px;
   width: 300px;
@@ -108,10 +111,9 @@ h5  {
 }
 
 .didascalia {
-  border-right: 0; 
-  display: flex;
-  flex-direction: row;
-  font-size: 18px;
+  /*padding-right: 150px; */
+   display: flex;
+  justify-content: flex-end;
 }
 
 li {
@@ -121,29 +123,29 @@ li {
 .section-wrap {
   min-height: 100%;
   margin: 0 150px;
-   /* border: 4px solid black; */
 }
 
 .article-text {
-  border: 2px solid pink;
   margin-top: 50px;
-  padding: 0 150px 0 0;
+  padding: 0 200px 0 0;
   position: relative;
   display: flex;
   flex-direction: row;
  }
 
 .article-text-title {
-  border: 1 solid color red;
+  position: absolute;
   margin-top: 0px;
-}
+  font-size: 22px;
+  }
 
 .article-text-paragraph {
   margin-top: 0px;
   font-size: 30px;
   margin-left:220px;
   margin-bottom: 0px;
-}
+  font-size: 22px;
+  }
 
 .article-img-background-02 {
   width: 100%;
@@ -161,7 +163,7 @@ li {
   height: 700px;
   margin-top: 100px;
   background-image: url("../images/fendi-chatbot.png");
-  background-color:#F7B853;
+  background-color: white;
   Background-position: center; 
   background-repeat: no-repeat;
   background-size: 80%;
@@ -171,7 +173,7 @@ li {
   height: 700px;
   margin-top: 100px;
   background-image: url("../images/fendi-customization.png");
-  background-color:#F7B853;
+  background-color: white;
   Background-position: center; 
   background-repeat: no-repeat;
   background-size: 80%;
@@ -182,19 +184,29 @@ li {
   height: 700px;
   margin-top: 100px;
   background-image: url("../images/fendi-order.png");
-  background-color:#F7B853;
+  background-color: white;
   Background-position: center; 
   background-repeat: no-repeat;
   background-size: 80%;
 }
 
-@media (max-width: 520px ) {
-  .article-img-background-02 {
-    min-width: 300px;
-    height: 
-  }
-  
+footer {
+  margin-top: 200px;
+  margin-left: 250px;
 }
+ 
+ footer a {
+   padding-right: 50px;
+   text-decoration: none;
+   color: black;
+   font-size: 24px;
+   font-weight: 600px;
+ }
+ 
+ footer p {
+   font-size: 18px;
+   color: grey;
+ }
 
 
 

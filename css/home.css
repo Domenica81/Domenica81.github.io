@@ -4,9 +4,20 @@
 
 body {
   font-family: helvetica, Georgia, 'Times New Roman', Times, serif;
-  background-color: rgb(189, 189, 189);
+  background-color: rgb(248, 248, 248);
 }
 
+.margin-section {
+  margin: 0px;
+   /* border: 1px solid black;*/
+ }
+
+ @media (max-width: 480px) {
+  .margin-section {
+    border: solid 2px red;
+    margin-left: 5px; 
+  }
+}  
 header {
   width: 100%;
   padding: 30px;
@@ -22,7 +33,7 @@ header {
   height: 50px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .logo-link  {
     width: 5px;
   }
@@ -33,7 +44,7 @@ header {
  height: 80px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .logo-image {
     width:120px;
   }
@@ -44,7 +55,6 @@ header {
   font-kerning: 18px;
   display: flex;
   flex-direction: row; 
- /* text-transform: uppercase;*/
 }
 
 .navbar-link {
@@ -63,18 +73,6 @@ header {
   }
 }
 
-.margin-section {
-  margin: 0 150px;
-   /* border: 1px solid black;*/
- }
-
- @media (max-width: 480px) {
-  .margin-section {
-    border: solid 2px red;
-    margin-left: 5px; 
-  }
-}    
-
 h1  {
   font-size: 150px;
   color: #D5D9D5;
@@ -82,6 +80,7 @@ h1  {
 
 h2  {
   font-size: 60px;
+  font-style: bold;
 }
 
 h3  {
@@ -92,8 +91,9 @@ h3  {
  min-height: 100vh;
  padding-top: 200px;
  padding-left: 150px;
-}
+ }
 
+ 
 @media (max-width: 480px) {
   .hero-text {
     width:100%;
@@ -287,22 +287,25 @@ my journey container
   } 
 }
 
-/*
+/***************
   project list
-*/
+****************/
 
 .project {
   /*border: 5px solid pink;*/
-  min-height: 50vh;
+  position: relative;
+  min-height: 80vh;
   margin-top: 100px;
   margin-left: 150px;
-  position: relative;
   font-size: 60px;
-  }
-.project li{
+ }
+
+.project li a {
   margin-top:25px;
   margin-left: 0px;
-  list-style: none;
+  color: black;
+  list-style: none; 
+  text-decoration: none;
 }
 
 .project h3 {
@@ -322,22 +325,22 @@ my journey container
   }
    .project li {
     font-size:70px;
- }
+     }
 }
   .project-list {
    padding: 0;
    margin: 0;
    font-style: normal;
    list-style: none;
-  }
+ }
 
-   .project-list:hover {
+   .project-list a:hover {
     color: red;
   }
 
-  /*
+/***************
   contact
-*/
+***************/
 
 .contact {
   min-height: 50vh;
@@ -360,21 +363,37 @@ my journey container
     top:80px;
   } 
 }
- 
- .contact-background {
+.contact-background {
   position: relative;
   top: 60px;
   z-index: -1;
 }
 
-footer {
- color: grey;
+.contact a {
+  color: red;
 }
 
+footer {
+ margin-left: 150px;
+ top: 50px;
+}
 
+footer a {
+  padding-right: 50px;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-weight: 400px;
+}
+
+footer p {
+  font-size: 18px;
+  color: grey;
+}
  
-  
 
+
+  
   
 
   

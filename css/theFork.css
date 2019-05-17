@@ -22,7 +22,7 @@ header {
   height: 50px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .logo-link  {
     width: 5px;
   }
@@ -33,14 +33,13 @@ header {
  height: 80px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .logo-image {
     width:120px;
   }
 }
 
 .navbar {
-  border: 1px solid blue;
   font-kerning: 18px;
   display: flex;
   flex-direction: row; 
@@ -54,7 +53,7 @@ header {
   color: black;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .navbar-link {
     width:100%;
     margin-left:50px;
@@ -72,8 +71,11 @@ h3  {
 }
 
 h4  {
-  font-size: 25px;
-}
+  font-size: 22px;
+  color: grey;
+  font-style: normal;
+  font-weight: 100;
+ }
 
 h5  {
   font-size: 18px;
@@ -85,12 +87,12 @@ h5  {
 }
 
 .hero h3 {
-   margin-left: 450px;
-   margin-right: 300px;
-   font-weight: 100;
+  margin-left: 350px;
+  margin-right: 400px;
+  font-weight: 600px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .hero h3 {
   margin: 50px;
   width: 300px;
@@ -109,9 +111,11 @@ h5  {
 }
 
 .didascalia {
-  margin-left: 0; 
+  
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+  
   font-size: 18px;
 }
 
@@ -126,7 +130,6 @@ li {
 }
 
 .article-text {
-  border: 2px solid pink;
   margin-top: 50px;
   padding: 0 150px 0 0;
   position: relative;
@@ -135,7 +138,8 @@ li {
  }
 
 .article-text-title {
-  border: 1 solid color red;
+  position: absolute;
+  
   margin-top: 0px;
 }
 
@@ -144,6 +148,7 @@ li {
   font-size: 30px;
   margin-left:220px;
   margin-bottom: 0px;
+  font-size: 22px;
 }
 
 .article-img-background-01 {
@@ -167,6 +172,24 @@ li {
   background-repeat: no-repeat;
   background-size: 80%;
 }
+
+footer {
+  margin-top: 200px;
+  margin-left: 250px;
+}
+ 
+ footer a {
+   padding-right: 50px;
+   text-decoration: none;
+   color: black;
+   font-size: 24px;
+   font-weight: 600px;
+ }
+ 
+ footer p {
+   font-size: 18px;
+   color: grey;
+ }
 
 
 

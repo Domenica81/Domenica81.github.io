@@ -8,7 +8,7 @@ body {
 }
 
 .margin-section {
-  margin: 0px;
+  margin: 0 150px;
    /* border: 1px solid black;*/
  }
 
@@ -365,6 +365,7 @@ my journey container
 }
 .contact-background {
   position: relative;
+  border-left: 150px;
   top: 60px;
   z-index: -1;
 }
